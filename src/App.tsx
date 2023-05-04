@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import {Header} from "./components/Header";
 import {Navbar} from "./components/Navbar";
+import {Profile} from "./components/Profile";
 
 
 function App() {
@@ -9,26 +10,7 @@ function App() {
         <div className="app-wrapper">
             <Header/>
             <Navbar/>
-            <div className="content">
-                <div>
-                    <img
-                        src="https://static8.depositphotos.com/1021722/859/i/600/depositphotos_8599315-stock-photo-art-business-power.jpg"/>
-                </div>
-                <div>
-                    ava + description
-                </div>
-                <div>
-                    my posts
-                    <div>
-                        New Post
-                    </div>
-                    <div>
-                        <div>Post1</div>
-                        <div>Post2</div>
-                        <div>Post3</div>
-                    </div>
-                </div>
-            </div>
+            <Profile/>
         </div>
     );
 }
