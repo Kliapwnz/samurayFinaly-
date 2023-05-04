@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
+import {Header} from "./components/Header";
 
 
 function App() {
     return (
         <div className="app-wrapper">
-            <header className="header">
-                <img src="https://img.freepik.com/free-vector/golden-bird-logo-design_1195-336.jpg?w=2000"/>
-            </header>
+            <Header/>
             <nav className="nav">
                 <div><a>Profile</a></div>
                 <div><a>Messages</a></div>
