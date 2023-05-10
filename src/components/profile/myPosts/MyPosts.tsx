@@ -12,8 +12,6 @@ export const MyPosts = () => {
             </div>
             <div className={s.posts}>
                 <Post/>
-                <div className={s.item}>Post2</div>
-                <div className={s.item}>Post3</div>
             </div>
         </div>
     );
