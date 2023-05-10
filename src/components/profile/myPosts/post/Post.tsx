@@ -7,7 +7,9 @@ export const Post = () => {
             <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrLF2dK9mac4u0-IbZBFiFoIyKku6oxrqDNA&usqp=CAU"/>
             Post1
-            <span>Like</span>
+            <div>
+                <span>Like</span>
+            </div>
         </div>
     );
 };
