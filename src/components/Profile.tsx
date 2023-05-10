@@ -1,9 +1,9 @@
 import React from 'react';
-import "./Profile.module.css"
+import s from "./Profile.module.css"
 
 export const Profile = () => {
     return (
-        <div className="content">
+        <div className={s.content}>
             <div>
                 <img
                     src="https://static8.depositphotos.com/1021722/859/i/600/depositphotos_8599315-stock-photo-art-business-power.jpg"/>
