@@ -16,7 +16,7 @@ export const Profile = () => {
                 <div>
                     New Post
                 </div>
-                <div>
+                <div className={s.item}>
                     <div>Post1</div>
                     <div>Post2</div>
                     <div>Post3</div>
