@@ -2,10 +2,11 @@
     grid-area: n;
     background-color: darkgrey;
 }
+
 .item {
-    color: darkslategray;
+    color: black;
 }
 
-.active{
+.active {
     color: yellow;
 }
