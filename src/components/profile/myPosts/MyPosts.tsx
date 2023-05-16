@@ -11,9 +11,9 @@ export const MyPosts = () => {
                 <button>Add Post</button>
             </div>
             <div className={s.posts}>
-                <Post/>
-                <Post/>
-                <Post/>
+                <Post message="Hello! This is my first post"/>
+                <Post message="How are you, guys?"/>
+                <Post message="I try to learn js!"/>
             </div>
         </div>
     );
