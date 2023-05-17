@@ -10,7 +10,7 @@ type PropsType = {
 export const DialogItem = (props: PropsType) => {
     return (
         <div>
-            <div><NavLink to={"/dialogs/" + props.id} className={s.dialog + " " + s.active}>{props.name}</NavLink></div>
+            <div><NavLink to={"/dialogs/" + props.id} className={s.dialogItems + " " + s.active}>{props.name}</NavLink></div>
         </div>
     );
 };
