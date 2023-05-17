@@ -6,12 +6,12 @@ export const Dialogs = () => {
     return (
         <div className={s.dialogs}>
             <div className={s.dialogItems}>
-                <div><NavLink to="/1" className={s.dialog + " " + s.active}>Evgeniy</NavLink></div>
-                <div><NavLink to="/2" className={s.dialog}>Anastasiya</NavLink></div>
-                <div><NavLink to="/3" className={s.dialog}>Yuri</NavLink></div>
-                <div><NavLink to="/4" className={s.dialog}>Elena</NavLink></div>
-                <div><NavLink to="/5" className={s.dialog}>Kristina</NavLink></div>
-                <div><NavLink to="/6" className={s.dialog}>Kevin</NavLink></div>
+                <div><NavLink to="/dialogs/1" className={s.dialog + " " + s.active}>Evgeniy</NavLink></div>
+                <div><NavLink to="/dialogs/2" className={s.dialog}>Anastasiya</NavLink></div>
+                <div><NavLink to="/dialogs/3" className={s.dialog}>Yuri</NavLink></div>
+                <div><NavLink to="/dialogs/4" className={s.dialog}>Elena</NavLink></div>
+                <div><NavLink to="/dialogs/5" className={s.dialog}>Kristina</NavLink></div>
+                <div><NavLink to="/dialogs/6" className={s.dialog}>Kevin</NavLink></div>
             </div>
             <div className={s.messages}>
                 <div className={s.message}>Hi</div>
