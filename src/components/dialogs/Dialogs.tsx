@@ -2,6 +2,7 @@ import React from 'react';
 import s from "./Dialogs.module.css";
 import {NavLink} from "react-router-dom";
 import {DialogItem} from "./dialogItem/DialogItem";
+import {Message} from "./message/Message";
 
 export const Dialogs = () => {
     return (
@@ -15,9 +16,9 @@ export const Dialogs = () => {
                 <DialogItem id={6} name="Kevin"/>
             </div>
             <div className={s.messages}>
-                <div className={s.message}>Hi</div>
-                <div className={s.message}>Do you play football?</div>
-                <div className={s.message}>How long?</div>
+                <Message message="Hi!"/>
+                <Message message="Do you play football?"/>
+                <Message message="How long?"/>
             </div>
         </div>
     );
