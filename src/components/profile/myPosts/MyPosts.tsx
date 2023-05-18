@@ -26,9 +26,6 @@ export const MyPosts = () => {
                         )
                     }
                 )}
-                {/*<Post message="Hello! This is my first post" likesCounter={6}/>*/}
-                {/*<Post message="How are you, guys?" likesCounter={12}/>*/}
-                {/*<Post message="I try to learn js!" likesCounter={88}/>*/}
             </div>
         </div>
     );
