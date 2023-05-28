@@ -23,7 +23,7 @@ export const MyPosts = (props:PropsType) => {
                     <textarea></textarea>
                 </div>
                 <div>
-                    <button>Add Post</button>
+                    <button onClick={()=>{alert("KLIAPWNZ")}}>Add Post</button>
                 </div>
             </div>
             <div className={s.posts}>
