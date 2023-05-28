@@ -5,9 +5,15 @@ import {Navbar} from "./components/navbar/Navbar";
 import {Profile} from "./components/profile/Profile";
 import {Dialogs} from "./components/dialogs/Dialogs";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {RootStatType} from "./redux/state"
+
+type PropsType={
+    state:RootStatType
+}
+
+function App(props:PropsType) {
 
 
-function App() {
     return (
         <BrowserRouter>
             <div className="app-wrapper">
@@ -15,8 +21,8 @@ function App() {
                 <Navbar/>
                 <div className="app-wrapper-content">
                     <Routes>
-                        <Route path="/profile" element={<Profile/>}/>
-                        <Route path="/dialogs/*" element={<Dialogs/>}/>
+                        <Route path="/profile" element={<Profile profilePage={props.state.profilePage}/>}/>
+                        <Route path="/dialogs/*" element={<Dialogs dialogsPage={props.state.dialogsPage}/>}/>
                     </Routes>
                 </div>
             </div>
