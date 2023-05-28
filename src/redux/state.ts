@@ -18,9 +18,7 @@ type DialogPageType = {
     dialogs: Array<DialogType>
     messages: Array<MessageType>
 }
-type SidebarType = {
-
-}
+type SidebarType = {}
 
 type RootStatType = {
     profilePage: ProfilePageType
