@@ -1,3 +1,5 @@
+import {rerenderTree} from "../rerender";
+
 export type MessageType = {
     id: number
     message: string
@@ -51,13 +53,14 @@ export let state: RootStateType = {
         ]
     },
     sidebar: {}
-}
 
+}
 export const addPost = (PostMessage: string) => {
-    const newPost:PostType = {
+    const newPost: PostType = {
         id: new Date().getTime(),
         message: PostMessage,
         likesCounter: 0,
     }
     state.profilePage.posts.push(newPost)
 }
+rerenderTree(state)
