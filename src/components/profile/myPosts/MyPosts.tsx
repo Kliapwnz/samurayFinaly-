@@ -3,12 +3,12 @@ import s from "./MyPosts.module.css";
 import {Post} from "./post/Post";
 import {PostType, state} from "../../../redux/state";
 
-type PropsType={
-    posts:PostType[]
-    addPost:(PostMessage: string)=>void
+type PropsType = {
+    posts: PostType[]
+    addPost: (PostMessage: string) => void
 }
 
-export const MyPosts = (props:PropsType) => {
+export const MyPosts = (props: PropsType) => {
 
     let postElements = props.posts.map(el => {
             return (
@@ -16,11 +16,10 @@ export const MyPosts = (props:PropsType) => {
             )
         }
     )
-    let newPostElement= React.createRef<HTMLTextAreaElement>()
+    let newPostElement = React.createRef<HTMLTextAreaElement>()
 
-    let addPost = ()=>{
-        let text= newPostElement.current?.value
-        alert(text)
+    let addPost = () => {
+        props.addPost(newPostElement.current ? newPostElement.current.value : "")
     }
 
 
