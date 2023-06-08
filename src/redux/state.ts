@@ -30,6 +30,7 @@ export type RootStateType = {
 
 
 export let state: RootStateType = {
+
     profilePage: {
         posts: [
             {id: 1, message: "Hello! This is my first post", likesCounter: 6},
@@ -52,7 +53,8 @@ export let state: RootStateType = {
             {id: 3, message: "How long?"},
         ]
     },
-    sidebar: {}
+    sidebar: {},
+
 
 }
 export const addPost = (PostMessage: string) => {
@@ -62,5 +64,6 @@ export const addPost = (PostMessage: string) => {
         likesCounter: 0,
     }
     state.profilePage.posts.push(newPost)
+    rerenderTree(state)
 }
-rerenderTree(state)
+
