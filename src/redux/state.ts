@@ -53,8 +53,8 @@ export let state: RootStatType = {
     sidebar: {}
 }
 
-export let addPost = (PostMessage: string) => {
-    let newPost = {
+export const addPost = (PostMessage: string) => {
+    const newPost = {
         id: 5,
         message: PostMessage,
         likesCounter: 0,
