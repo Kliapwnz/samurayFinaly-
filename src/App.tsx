@@ -5,10 +5,10 @@ import {Navbar} from "./components/navbar/Navbar";
 import {Profile} from "./components/profile/Profile";
 import {Dialogs} from "./components/dialogs/Dialogs";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import {addPost, RootStatType} from "./redux/state"
+import {addPost, RootStateType} from "./redux/state"
 
 type PropsType={
-    state:RootStatType
+    state:RootStateType
     addPost:(PostMessage: string)=>void
 }
 

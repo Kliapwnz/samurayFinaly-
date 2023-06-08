@@ -20,14 +20,14 @@ export type DialogPageType = {
 }
 export type SidebarType = {}
 
-export type RootStatType = {
+export type RootStateType = {
     profilePage: ProfilePageType
     dialogsPage: DialogPageType
     sidebar: SidebarType
 }
 
 
-export let state: RootStatType = {
+export let state: RootStateType = {
     profilePage: {
         posts: [
             {id: 1, message: "Hello! This is my first post", likesCounter: 6},
